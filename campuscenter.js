@@ -6,13 +6,15 @@ var doorOpening = document.getElementById("audio")
 let random = Math.floor(Math.random() * 2);
 
 function openDoor(number, el){
-    doorOpening.play()
-    if (random==number){
-        el.setAttribute("src", "img/doors/cat.PNG");
-        btn.style.visibility = "visible"
-    }
-    else{
-        el.setAttribute("src", "img/doors/no cat.PNG")
+    if (el.getAttribute("src") == "img/doors/closed.PNG"){
+        doorOpening.play()
+        if (random==number){
+            el.setAttribute("src", "img/doors/cat.PNG");
+            btn.style.visibility = "visible"
+        }
+        else{
+            el.setAttribute("src", "img/doors/no cat.PNG")
+        }
     }
 }
 door1.addEventListener("click", function() {
