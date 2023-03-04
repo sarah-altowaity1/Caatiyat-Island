@@ -8,7 +8,6 @@ food = 0
 
 function increment(el){
     el.style.visibility = "hidden";
-    munching.play()
     food = food + 1;
     if (food == 1){
         cat.setAttribute("src", "img/food/cat2.PNG");
@@ -20,6 +19,7 @@ function increment(el){
         cat.setAttribute("src", "img/food/Chonkiest.PNG");
         btn.style.visibility = "visible"
     }
+    munching.play()
 }
 brocolli.addEventListener('click', function() {
     increment(brocolli);
