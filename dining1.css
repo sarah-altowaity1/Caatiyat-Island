@@ -14,13 +14,28 @@ img{
 }
 
 .container{
+    position: relative;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+a{
+    position: absolute;
+    width: 7vw;
+    height: 7vw;
+    bottom: 0;
+    right: 0;
+}
+
+.btn{
+    width: 7vw;
+    position: absolute;
+}
+
 .grid-container {
+    position: relative;
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
     border: 5px solid white;
@@ -96,6 +111,11 @@ img{
         height: auto;
         grid-row: 6;
     }
+    .next img{
+        width: 40px;
+        height: 40px;
+    }
+    
 
 }
 
