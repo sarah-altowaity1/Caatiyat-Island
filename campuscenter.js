@@ -2,10 +2,11 @@ var door1= document.getElementById("door1")
 var doo2 = document.getElementById("door2")
 var door3 = document.getElementById("door3")
 var btn = document.getElementById("btn")
-
+var doorOpening = document.getElementById("audio")
 let random = Math.floor(Math.random() * 2);
 
 function openDoor(number, el){
+    doorOpening.play()
     if (random==number){
         el.setAttribute("src", "img/doors/cat.PNG");
         btn.style.visibility = "visible"

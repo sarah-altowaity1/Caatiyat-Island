@@ -35,6 +35,9 @@ a{
     visibility: hidden;
 }
 
+audio{
+    display: hidden;
+}
 .grid-container {
     position: relative;
     display: grid;
