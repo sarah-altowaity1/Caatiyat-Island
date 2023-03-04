@@ -3,9 +3,12 @@ var fish = document.getElementById("fish")
 var watermelon = document.getElementById("watermelon")
 var cat = document.getElementById("cat")
 var btn = document.getElementById("btn")
+var munching = document.getElementById("audio")
 food = 0
 
-function increment(){
+function increment(el){
+    el.style.visibility = "hidden";
+    munching.play()
     food = food + 1;
     if (food == 1){
         cat.setAttribute("src", "img/food/cat2.PNG");
@@ -19,17 +22,14 @@ function increment(){
     }
 }
 brocolli.addEventListener('click', function() {
-    brocolli.style.visibility = "hidden";
-    increment();
+    increment(brocolli);
 })
 
 fish.addEventListener('click',  function(){
-    fish.style.visibility = "hidden";
-    increment();
+    increment(fish);
 
 })
 
 watermelon.addEventListener('click', function(){
-    watermelon.style.visibility = "hidden";
-    increment();
+    increment(watermelon);
 })
