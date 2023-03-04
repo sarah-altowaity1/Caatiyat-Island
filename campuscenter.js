@@ -7,7 +7,7 @@ let random = Math.floor(Math.random() * 2);
 
 function openDoor(number, el){
     if (el.getAttribute("src") == "img/doors/closed.PNG"){
-        doorOpening.play()
+
         if (random==number){
             el.setAttribute("src", "img/doors/cat.PNG");
             btn.style.visibility = "visible"
@@ -15,6 +15,7 @@ function openDoor(number, el){
         else{
             el.setAttribute("src", "img/doors/no cat.PNG")
         }
+        doorOpening.play()
     }
 }
 door1.addEventListener("click", function() {
