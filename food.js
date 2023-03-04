@@ -2,7 +2,7 @@ var brocolli = document.getElementById("brocolli")
 var fish = document.getElementById("fish")
 var watermelon = document.getElementById("watermelon")
 var cat = document.getElementById("cat")
-// var btn = document.getElementById("btn")
+var btn = document.getElementById("btn")
 food = 0
 
 function increment(){
@@ -13,9 +13,10 @@ function increment(){
     else if (food == 2){
         cat.setAttribute("src", "img/food/cat3.PNG");
     }
-    // else if (food == 3){
-    //     btn.style.visibility = "block"
-    // }
+    else if (food == 3){
+        cat.setAttribute("src", "img/food/Chonkiest.PNG");
+        btn.style.visibility = "visible"
+    }
 }
 brocolli.addEventListener('click', function() {
     brocolli.style.visibility = "hidden";
