@@ -32,8 +32,11 @@ a{
 .btn{
     width: 7vw;
     position: absolute;
+    visibility: hidden;
 }
-
+audio{
+    display: hidden;
+}
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
