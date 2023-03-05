@@ -14,7 +14,6 @@ img{
 }
 
 .container{
-    position: relative;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -38,6 +37,7 @@ audio{
     display: hidden;
 }
 .grid-container {
+    position: relative;
     display: grid;
     grid-template-columns: auto auto auto;
     border: 5px solid white;
