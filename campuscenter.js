@@ -2,7 +2,8 @@ var door1= document.getElementById("door1")
 var doo2 = document.getElementById("door2")
 var door3 = document.getElementById("door3")
 var btn = document.getElementById("btn")
-var doorOpening = document.getElementById("audio")
+var catMeowing = document.getElementById("audio1")
+var doorOpening = document.getElementById("audio2")
 let random = Math.floor(Math.random() * 2);
 
 function openDoor(number, el){
@@ -11,11 +12,13 @@ function openDoor(number, el){
         if (random==number){
             el.setAttribute("src", "img/doors/cat.PNG");
             btn.style.visibility = "visible"
+            catMeowing.play()
         }
         else{
             el.setAttribute("src", "img/doors/no cat.PNG")
+            doorOpening.play()
         }
-        doorOpening.play()
+
     }
 }
 door1.addEventListener("click", function() {
